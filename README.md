@@ -1,6 +1,6 @@
 # overseer
 
-This is fork of jpillora and yangyuan6, but removed the S3.
+This is fork of `jpillora` and `yangyuan6`'s, but removed the S3.
 
 [![GoDoc](https://godoc.org/github.com/kokizzu/overseer?status.svg)](https://godoc.org/github.com/kokizzu/overseer)   [![Tests](https://github.com/kokizzu/overseer/workflows/Tests/badge.svg)](https://github.com/kokizzu/overseer/actions?workflow=Tests)
 
