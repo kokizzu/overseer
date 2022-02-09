@@ -33,7 +33,7 @@ Below is a list of **optional extras** which would be nice to have. Optional is 
 
 ### More fetchers
 
-In general New fetchers should go in their own repos which can be linked to from the `overseer` docs. Arguably, the S3 fetcher should have been in it's own repo due to the size of the dependent package `github.com/aws/aws-sdk-go`, though this would break existing programs. Similarly, if a fetcher is reasonably simple and only uses the standard library then it could be included in this repo (e.g. the Github fetcher since it would just need `net/http`).
+In general New fetchers should go in their own repos which can be linked to from the `overseer` docs. If a fetcher is reasonably simple and only uses the standard library then it could be included in this repo (e.g. the Github fetcher since it would just need `net/http`).
 
 * HTTP fetcher long-polling (pseduo-push)
 * SCP fetcher (connect to a server, poll path)

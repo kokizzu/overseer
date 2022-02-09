@@ -71,7 +71,7 @@ func prog(state overseer.State) {
 * All child process pipes are connected back to the main process.
 * All signals received on the main process are forwarded through to the child process.
 * `Fetcher` runs in a goroutine and checks for updates at preconfigured interval. When `Fetcher` returns a valid binary stream (`io.Reader`), the master process saves it to a temporary location, verifies it, replaces the current binary and initiates a graceful restart.
-* The `fetcher.HTTP` accepts a `URL`, it polls this URL with HEAD requests and until it detects a change. On change, we `GET` the `URL` and stream it back out to `overseer`. See also `fetcher.S3`.
+* The `fetcher.HTTP` accepts a `URL`, it polls this URL with HEAD requests and until it detects a change. On change, we `GET` the `URL` and stream it back out to `overseer`.
 * Once a binary is received, it is run with a simple echo token to confirm it is a `overseer` binary.
 * Except for scheduled restarts, the active child process exiting will cause the main process to exit with the same code. So, **`overseer` is not a process manager**.
 
@@ -163,7 +163,6 @@ func main() {
 * [Common `fetcher.Interface`](https://godoc.org/github.com/kokizzu/overseer/fetcher#Interface)
 	* [File fetcher](https://godoc.org/github.com/kokizzu/overseer/fetcher#File)
 	* [HTTP fetcher](https://godoc.org/github.com/kokizzu/overseer/fetcher#HTTP)
-	* [S3 fetcher](https://godoc.org/github.com/kokizzu/overseer/fetcher#S3)
 	* [Github fetcher](https://godoc.org/github.com/kokizzu/overseer/fetcher#Github)
 
 ### Third-party Fetchers
