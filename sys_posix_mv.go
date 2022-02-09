@@ -1,6 +1,6 @@
 package overseer
 
-// TODO(@jpillora) borrowed from https://github.com/aisola/go-coreutils/blob/master/mv/mv.go
+// TODO(@kokizzu) borrowed from https://github.com/aisola/go-coreutils/blob/master/mv/mv.go
 //
 // mv.go (go-coreutils) 0.1
 // Copyright (C) 2014, The GO-Coreutils Developers.
